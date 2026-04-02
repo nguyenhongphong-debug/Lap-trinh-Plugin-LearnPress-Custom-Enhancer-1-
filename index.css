@@ -1,0 +1,39 @@
+export interface Course {
+  id: string;
+  title: string;
+  lessonsCount: number;
+  duration: string;
+  enrolled: boolean;
+  completed: boolean;
+  thumbnail: string;
+}
+
+export const MOCK_COURSES: Course[] = [
+  {
+    id: "lp-101",
+    title: "Lập trình React cơ bản",
+    lessonsCount: 24,
+    duration: "12 giờ",
+    enrolled: true,
+    completed: false,
+    thumbnail: "https://picsum.photos/seed/react/800/450"
+  },
+  {
+    id: "lp-102",
+    title: "Thiết kế UI/UX chuyên nghiệp",
+    lessonsCount: 18,
+    duration: "8 giờ",
+    enrolled: false,
+    completed: false,
+    thumbnail: "https://picsum.photos/seed/design/800/450"
+  },
+  {
+    id: "lp-103",
+    title: "Làm chủ Tailwind CSS",
+    lessonsCount: 12,
+    duration: "5 giờ",
+    enrolled: true,
+    completed: true,
+    thumbnail: "https://picsum.photos/seed/tailwind/800/450"
+  }
+];
